@@ -26,9 +26,9 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "git://github.com/Hjdskes/gcolor3.git",
-                    "tag": "v2.3",
-                    "commit": "84b21e4f2e8a023aa90e2503c7b3922e02f301bf"
+                    "url": "https://gitlab.gnome.org/World/gcolor3.git",
+                    "tag": "v2.3.1",
+                    "commit": "17dca0125fc3c931418d8723b684332d35bd5715"
                 }
             ]
         }
