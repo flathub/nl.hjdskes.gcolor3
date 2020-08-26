@@ -1,34 +1,41 @@
 {
     "app-id": "nl.hjdskes.gcolor3",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.32",
+    "runtime-version": "3.36",
     "sdk": "org.gnome.Sdk",
     "command": "gcolor3",
     "finish-args": [
         "--share=ipc",
         "--socket=x11",
         "--socket=wayland",
-        "--filesystem=xdg-run/dconf",
-        "--filesystem=~/.config/dconf:ro",
-        "--talk-name=ca.desrt.dconf",
-        "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
+        "--metadata=X-DConf=migrate-path=/nl/hjdskes/gcolor3/"
     ],
     "cleanup": [
         "/share/man"
     ],
     "modules": [
         {
-            "name": "gcolor3",
+            "name": "libportal",
             "buildsystem": "meson",
             "config-opts": [
-                    "--buildtype=debugoptimized"
+                "-Dgtk_doc=false"
             ],
             "sources": [
                 {
                     "type": "git",
+                    "url": "https://github.com/flatpak/libportal.git",
+                    "commit": "bff3289781ef27388e75f772d5fe9dee20fdfb53"
+                }
+            ]
+        },
+        {
+            "name": "gcolor3",
+            "buildsystem": "meson",
+            "sources": [
+                {
+                    "type": "git",
                     "url": "https://gitlab.gnome.org/World/gcolor3.git",
-                    "tag": "v2.3.1",
-                    "commit": "17dca0125fc3c931418d8723b684332d35bd5715"
+                    "tag": "v2.4.0"
                 }
             ]
         }
