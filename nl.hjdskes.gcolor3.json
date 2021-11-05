@@ -1,8 +1,8 @@
 {
     "app-id": "nl.hjdskes.gcolor3",
-    "runtime": "org.gnome.Platform",
-    "runtime-version": "40",
-    "sdk": "org.gnome.Sdk",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "21.08",
+    "sdk": "org.freedesktop.Sdk",
     "command": "gcolor3",
     "finish-args": [
         "--share=ipc",
