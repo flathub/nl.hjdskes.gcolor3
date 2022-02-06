@@ -6,7 +6,7 @@
     "command": "gcolor3",
     "finish-args": [
         "--share=ipc",
-        "--socket=x11",
+        "--socket=fallback-x11",
         "--socket=wayland",
         "--metadata=X-DConf=migrate-path=/nl/hjdskes/gcolor3/"
     ],
