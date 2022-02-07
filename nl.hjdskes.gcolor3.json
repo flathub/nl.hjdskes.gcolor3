@@ -24,13 +24,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/flatpak/libportal.git",
-                    "commit": "bff3289781ef27388e75f772d5fe9dee20fdfb53",
                     "tag": "0.4",
-                     "commit": "f68764e288ede516d902b131cc4fadded3804059",
-                     "x-checker-data": {
-                         "type": "git",
-                         "tag-pattern": "^([\\d.]+)$"
-                     }
+                    "commit": "f68764e288ede516d902b131cc4fadded3804059"
                 }
             ]
         },
@@ -42,11 +37,11 @@
                     "type": "git",
                     "url": "https://gitlab.gnome.org/World/gcolor3.git",
                     "tag": "v2.4.0",
-                     "commit": "7053f9e6a890175fc212df625e02ffbdce418146",
-                     "x-checker-data": {
-                         "type": "git",
-                         "tag-pattern": "^v([\\d.]+)$"
-                     }
+                    "commit": "7053f9e6a890175fc212df625e02ffbdce418146",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    }
                 }
             ]
         }
