@@ -1,0 +1,81 @@
+diff --git a/data/nl.hjdskes.gcolor3.appdata.xml.in b/data/nl.hjdskes.gcolor3.appdata.xml.in
+index fb82cb9..805a3b9 100644
+--- a/data/nl.hjdskes.gcolor3.appdata.xml.in
++++ b/data/nl.hjdskes.gcolor3.appdata.xml.in
+@@ -36,9 +36,11 @@
+       <caption>The list of saved colors</caption>
+     </screenshot>
+   </screenshots>
+-  <url type="homepage">https://hjdskes.nl/projects/gcolor3/</url>
++  <url type="homepage">https://www.hjdskes.nl/projects/gcolor3/</url>
+   <url type="bugtracker">https://gitlab.gnome.org/World/gcolor3/issues</url>
+   <url type="help">https://gitlab.gnome.org/World/gcolor3/issues</url>
++  <url type="vcs-browser">https://gitlab.gnome.org/World/gcolor3</url>
++  <url type="translate">https://l10n.gnome.org/module/gcolor3/</url>
+   <!-- Translators: please do NOT translate this. -->
+   <developer_name>Christopher Davis</developer_name>
+   <update_contact>christopherdavis_at_gnome.org</update_contact>
+@@ -50,25 +52,25 @@
+         <p>
+           Gcolor3 is now "Color Picker"! With the rename comes a new maintiner,
+           a new icon, lots of new improvements, and many translation updates.
++        </p>
+           <ul>
+             <li>Color Picker now works on Wayland!</li>
+             <li>The typography and iconography of Color Picker has changed to be consistent and more in line with the GNOME HIG.</li>
+             <li>The use of deprecated GTK APIs has been dropped, which will make porting to GTK4 a smooth process.</li>
+             <li>Multiple other under-the-hood improvements</li>
+           </ul>
+-        </p>
+       </description>
+     </release>
+     <release version="2.3.1" date="2018-09-02">
+       <description>
+ 	<p>
+ 	  Gcolor3 has moved to the GNOME umbrella! It is now part of the World collection,
+ 	  non official GNOME projects that use additional functionality.
++      </p>
+ 	  <ul>
+ 	    <li>The saved colors page is now more in-line with GNOME</li>
+ 	    <li>Gcolor3 now builds on FreeBSD</li>
+ 	  </ul>
+-	</p>
+       </description>
+     </release>
+     <release version="2.3" date="2018-09-01">
+@@ -79,6 +81,7 @@
+ 	  2.3 is finally here. It brings UI improvements, new and
+ 	  updated translations and a crash fix for Wayland. Full
+ 	  Wayland support is planned for version 2.4.
++    </p>
+ 	  <ul>
+ 	    <li>Redesign the saved colors page</li>
+ 	    <li>Redesign the header bar</li>
+@@ -89,25 +92,22 @@
+ 	    <li>Gcolor3 now comes with a manual page</li>
+ 	    <li>Lots of under-the-hood improvements</li>
+ 	  </ul>
+-	</p>
+       </description>
+     </release>
+     <release version="2.2" date="2016-08-20">
+       <description>
+-        <p>
+           <ul>
+             <li>Centrally manage colors between several running instances;</li>
+             <li>Follow the XDG directory specification for the configuration file.
+                 This means that the configuration file has moved from `~/.rgb.ini` to `$XDG_CONFIG_HOME/gcolor3/config.ini`;</li>
+             <li>Copy the selected color's hex value from the tree view using Ctrl-C;</li>
+             <li>Make the main window resizable;</li>
+             <li>Translation updates.</li>
+           </ul>
+-          For more information, see the release notes on Gcolor3's GitLab page.
+-        </p>
++          <p>For more information, see the release notes on Gcolor3's GitLab page.</p>
+       </description>
+     </release>
+   </releases>
+-  <content_rating type="oars-1.0" />
++  <content_rating type="oars-1.1" />
+   <launchable type="desktop-id">nl.hjdskes.gcolor3.desktop</launchable>
+ </component>
