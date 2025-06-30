@@ -18,14 +18,20 @@
             "name": "libportal",
             "buildsystem": "meson",
             "config-opts": [
-                "-Dgtk_doc=false"
+                "-Ddocs=false",
+                "-Dtests=false",
+                "-Dvapi=false",
+                "-Dbackend-gtk3=enabled",
+                "-Dbackend-gtk4=disabled",
+                "-Dbackend-qt5=disabled",
+                "-Dbackend-qt6=disabled"
             ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/flatpak/libportal.git",
-                    "tag": "0.4",
-                    "commit": "f68764e288ede516d902b131cc4fadded3804059"
+                    "tag": "0.9.1",
+                    "commit": "8f5dc8d192f6e31dafe69e35219e3b707bde71ce"
                 }
             ]
         },
@@ -46,6 +52,10 @@
                 {
                     "type": "patch",
                     "path": "fix_appdata.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "fix_new_libportal_dep.patch"
                 }
             ]
         }

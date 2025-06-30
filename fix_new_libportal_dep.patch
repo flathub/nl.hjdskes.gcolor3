@@ -1,0 +1,40 @@
+diff --git a/meson.build b/meson.build
+index 6453679..602c8b1 100644
+--- a/meson.build
++++ b/meson.build
+@@ -10,6 +10,10 @@ dep_libportal = dependency(
+   fallback: ['libportal', 'libportal_dep'],
+   default_options: ['gtk_doc=false'],
+ )
++dep_libportal_gtk3 = dependency(
++  'libportal-gtk3',
++  required: true,
++)
+ cc = meson.get_compiler('c')
+ dep_lm = cc.find_library('m', required: true)
+ 
+diff --git a/src/gcolor3-color-selection.c b/src/gcolor3-color-selection.c
+index 7413850..5df9d54 100644
+--- a/src/gcolor3-color-selection.c
++++ b/src/gcolor3-color-selection.c
+@@ -41,7 +41,7 @@
+ #include <gtk/gtk.h>
+ #include <glib/gi18n.h>
+ #include <libportal/portal.h>
+-#include <libportal/portal-gtk3.h>
++#include <libportal-gtk3/portal-gtk3.h>
+ 
+ #ifdef ENABLE_NLS
+ #define P_(String) g_dgettext(GETTEXT_PACKAGE "-properties",String)
+diff --git a/src/meson.build b/src/meson.build
+index 3998f68..d488e51 100644
+--- a/src/meson.build
++++ b/src/meson.build
+@@ -42,6 +42,7 @@ executable(
+   dependencies: [
+     dep_gtk,
+     dep_libportal,
++    dep_libportal_gtk3,
+     dep_lm
+   ],
+   install: true,
